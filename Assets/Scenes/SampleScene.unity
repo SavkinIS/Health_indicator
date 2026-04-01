@@ -561,7 +561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0.29507446, y: 0}
+  m_AnchoredPosition: {x: 0.29510498, y: 0}
   m_SizeDelta: {x: -20.589869, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &686086080
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slider: {fileID: 1624896278}
-  _speed: 5
+  _speed: 0.3
 --- !u!114 &698280671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,7 +846,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0.29507446, y: 0}
+  m_AnchoredPosition: {x: 0.29510498, y: 0}
   m_SizeDelta: {x: -20.589869, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &899714291
