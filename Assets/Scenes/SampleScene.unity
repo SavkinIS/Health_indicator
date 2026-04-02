@@ -696,8 +696,8 @@ MonoBehaviour:
   - {fileID: 1470587683}
   - {fileID: 1944489244}
   - {fileID: 698280670}
-  _hitButton: {fileID: 1323515613}
-  _healButton: {fileID: 1702371393}
+  _healButton: {fileID: 0}
+  _hitButton: {fileID: 0}
 --- !u!4 &840730176
 Transform:
   m_ObjectHideFlags: 0
@@ -905,8 +905,9 @@ GameObject:
   - component: {fileID: 1323515615}
   - component: {fileID: 1323515614}
   - component: {fileID: 1323515613}
+  - component: {fileID: 1323515616}
   m_Layer: 5
-  m_Name: DamageButton
+  m_Name: HitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1014,6 +1015,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323515611}
   m_CullTransparentMesh: 1
+--- !u!114 &1323515616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323515611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57184f33245f49d6b38241047f1a3c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 1323515613}
+  _randomChangeValueMin: 10
+  _randomChangeValueMax: 20
 --- !u!1 &1324346563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,6 +1829,7 @@ GameObject:
   - component: {fileID: 1702371395}
   - component: {fileID: 1702371394}
   - component: {fileID: 1702371393}
+  - component: {fileID: 1702371396}
   m_Layer: 5
   m_Name: HealButton
   m_TagString: Untagged
@@ -1922,6 +1939,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702371391}
   m_CullTransparentMesh: 1
+--- !u!114 &1702371396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702371391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955b77931a944a95b44949a6dfdbccd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 1702371393}
+  _randomChangeValueMin: 15
+  _randomChangeValueMax: 25
 --- !u!1 &1748488357
 GameObject:
   m_ObjectHideFlags: 0

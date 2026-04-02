@@ -2,11 +2,11 @@ using UnityEngine;
 
 public abstract class HealthViewBase : MonoBehaviour
 {
-    public void OnHealthChangedInternal(float current, float max)
+    public void HealthChangedInternal(float current, float max)
     {
         float normalized = current <= 0 ? 0 : current / max;
-        OnHealthChanged(current, max, normalized);
+        HealthChanged(current, max, normalized);
     }
 
-    protected abstract void OnHealthChanged(float current, float max, float normalized);
+    protected abstract void HealthChanged(float current, float max, float normalized);
 }

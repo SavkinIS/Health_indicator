@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class HealthSmoothBarView : HealthBarView
 {
-    [SerializeField] private float _speed = 5f;
+    [SerializeField] private float _speed = 0.3f;
 
     private float _targetValue;
     private Coroutine _fillCoroutine;
 
-    protected override void OnHealthChanged(float current, float max, float normalized)
+    protected override void HealthChanged(float current, float max, float normalized)
     {
         _targetValue = normalized;
 
