@@ -4,16 +4,17 @@ using UnityEngine;
 public class HealthViewHandler : MonoBehaviour
 {
     [SerializeField] private HealthViewBase[] _healthViews;
-    [SerializeField] private HealButton _healButton;
-    [SerializeField] private HitButton _hitButton;
-    
-    private Health _health;
-    
+    [SerializeField] private DamageModifyHealthButton _hitButton;
+    [SerializeField] private HealModifyHealthButton _healButton;
+
+    private IHealth _health;
+
     private void Awake()
     {
-        _health = new Health();
-        _hitButton.SetClickCallback(_health.TakeDamage);
-        _healButton.SetClickCallback(_health.Heal);
+        var health = new Health();
+        _health = health;
+        _hitButton.Initialize(health);
+        _healButton.Initialize(health);
     }
 
     private void OnEnable()
@@ -28,7 +29,7 @@ public class HealthViewHandler : MonoBehaviour
 
         _health?.Refresh();
     }
-    
+
     private void OnDisable()
     {
         foreach (HealthViewBase healthView in _healthViews)

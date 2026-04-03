@@ -3,6 +3,5 @@ using System;
 public interface IHealth
 {
     event Action<float, float, float> Changed;
-    float Current { get; }
-    float Max { get; }
+    void Refresh(float changedValue = 0);
 }

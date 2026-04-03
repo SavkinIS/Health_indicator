@@ -22,7 +22,7 @@ public class HealthSmoothBarView : HealthBarView
     {
         while (!Mathf.Approximately(_slider.value, _targetValue))
         {
-            _slider.value = Mathf.MoveTowards(
+            _slider.value = Mathf.Lerp(
                 _slider.value,
                 _targetValue,
                 _speed * Time.deltaTime
