@@ -29,7 +29,7 @@ public class Health : IHealth, IHealable, IDamageable
         Refresh(previous - _current);
     }
 
-    public void Heal(float additionalHealth)
+    public void RestoreHealth(float additionalHealth)
     {
         if (additionalHealth < 0)
             return;

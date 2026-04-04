@@ -7,9 +7,9 @@ public class HealModifyHealthButton : ModifyHealthButtonBase
         _healable = healable;
     }
     
-    protected override void HealthChange()
+    protected override void ChangeHealth()
     {
         float additionalHealth = UnityEngine.Random.Range(RandomChangeValueMin, RandomChangeValueMax);
-        _healable.Heal(additionalHealth);
+        _healable.RestoreHealth(additionalHealth);
     }
 }

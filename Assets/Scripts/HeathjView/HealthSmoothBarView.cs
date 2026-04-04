@@ -20,18 +20,18 @@ public class HealthSmoothBarView : HealthBarView
 
     private IEnumerator FillCoroutine()
     {
-        while (!Mathf.Approximately(_slider.value, _targetValue))
+        while (!Mathf.Approximately(Slider.value, _targetValue))
         {
-            _slider.value = Mathf.Lerp(
-                _slider.value,
+            Slider.value = Mathf.Lerp(
+                Slider.value,
                 _targetValue,
                 _speed * Time.deltaTime
             );
 
-            Debug.Log(_slider.value);
+            Debug.Log(Slider.value);
             yield return null;
         }
 
-        _slider.value = _targetValue;
+        Slider.value = _targetValue;
     }
 }

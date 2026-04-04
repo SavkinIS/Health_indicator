@@ -7,7 +7,7 @@ public class DamageModifyHealthButton : ModifyHealthButtonBase
         _damageable = damageable;
     }
     
-    protected override void HealthChange()
+    protected override void ChangeHealth()
     {
         float damage = UnityEngine.Random.Range(RandomChangeValueMin, RandomChangeValueMax);
         _damageable.TakeDamage(damage);

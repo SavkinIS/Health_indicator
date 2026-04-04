@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd9cdfae55948ebaff3a7a5ebd81ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 1624896278}
+  Slider: {fileID: 1624896278}
   _speed: 5
 --- !u!114 &698280671
 MonoBehaviour:
@@ -1027,9 +1027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd56ca428394dc392c556d9a9d2425d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 1323515613}
   RandomChangeValueMin: 10
   RandomChangeValueMax: 20
+  _button: {fileID: 1323515613}
 --- !u!1 &1324346563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,9 +1951,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31119a3162f459a94db79420da055e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 1702371393}
   RandomChangeValueMin: 15
   RandomChangeValueMax: 25
+  _button: {fileID: 1702371393}
 --- !u!1 &1748488357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045ece3bfc0f48959879b96594d1f03a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 852251629}
+  Slider: {fileID: 852251629}
 --- !u!114 &1944489245
 MonoBehaviour:
   m_ObjectHideFlags: 0
